@@ -1,141 +1,197 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    margin-left: 20px;
-    color: black;
-}
-
-h5 {
-    margin-left: 20px;
-    color: grey;
-    font-size: 12px;
-}
-
-.coluna {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: repeat(15, 1fr);
-}
-
-.coluna > div:nth-child(1) {
-    background-color: #FFC0CB;
-    margin: 20px;
-    width: 40px;
-    height: 40px;
+#cabecalho {
+    height: 632px;
+    width: 5%;
+    background: rgb(0, 255, 191);
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-.coluna > div:nth-child(2) {
-    background-color: #FFC0CB;
-    margin: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-column: 1;
+    float: left;
 }
 
-.coluna > div:nth-child(3) {
-    background-color: #FFC0CB;
-    margin: 20px;
-    width: 40px;
-    height: 40px;
+#segunda {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-column: 1;
-}
-.coluna > div:nth-child(4) {
-    background-color: #FFC0CB;
-    margin: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-column: 1;
-}
-.coluna > div:nth-child(5) {
-    background-color: #FFC0CB;
-    margin: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1;
-    align-items: center;
-    text-align: center;
 }
 
-.aulas1 {
-    background-color: #FFC0CB;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-    align-items: center;
-    text-align: center;
+#segunda .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
 }
 
-.aulas2 {
-    background-color: #FFC0CB;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-column: 3;
-    grid-row: 2;
+#segunda .dia {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
-.aulas3 {
-    background-color: #FFC0CB;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-column: 4;
-    grid-row: 3;
-    align-items: center;
-    text-align: center;
+#segunda .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
 }
 
-.aulas4 {
-    background-color: #FFC0CB;
-    width: 150px;
-    height: 40px;
-    padding: 0;
+#terca {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
     border-radius: 5px;
-    display: grid;
-    grid-column: 5;
-    grid-row: 4;
-    align-items: center;
-    text-align: center;
-}
-
-.aulas5 {
-    background-color: #FFC0CB;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    display: grid;
-    grid-column: 6;
-    grid-row: 5;
-    align-items: center;
-    text-align: center;
 }
 
 
+#terca .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#terca .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#terca .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#quarta { 
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#quarta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#quarta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#quarta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#quinta {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#quinta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#quinta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#quinta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#sexta {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#sexta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#sexta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    color: white;
+}
+
+#sexta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#footer {
+    height: 120px;
+    width: 93%;
+
+    float: left;
+    margin-top: 5px;
+    margin-left: 1px;
+    border-radius: 5px;
+
+    background: pink;
+}
