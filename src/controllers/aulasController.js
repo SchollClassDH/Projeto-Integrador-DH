@@ -6,19 +6,19 @@ const aulasController = {
                 
             },
             {
-                dia_semana: '',
+                dia_semana: 'Terça-Feira',
                 
             },
             {
-                dia_semana: '',
+                dia_semana: 'Quarta-Feira',
                 
             },
             {
-                dia_semana: '',
+                dia_semana: 'Quinta-Feira',
                 
             },
             {
-                dia_semana: '',
+                dia_semana: 'Sexta-Feira',
                 
             }
         ]
