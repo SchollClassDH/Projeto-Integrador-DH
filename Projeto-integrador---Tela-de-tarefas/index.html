@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <input type="checkbox" id="check">
+           <input type="checkbox" id="check">
 
     <!-- header começo -->
-     <header>
+      <header>
          <label for="check">
             <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
          </label>
@@ -24,7 +24,7 @@
          <div class="right">
              <a href="#" class="sair_btn">Sair</a>
          </div>
-     </header>
+     </header> 
 
      <!-- header final -->
      <!-- sidebar começo -->
@@ -52,8 +52,14 @@
 
      <center>
      <div class="container">
-         
-        <h3>Adicionando Tarefas</h3>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+
+
+        <h3>Adicionando Matéria</h3>
 
         <br>
 
@@ -63,14 +69,8 @@
            <input type="text" id="materia" name="materia" placeholder="Matéria Desejada" required>
 
            <br> <br>
-           
-           <label for="conteudo">Conteúdo:</label>
-           <input type="text" id="conteudo" name="conteudo" placeholder="Conteúdo" required>
-           
 
-           <br> <br>
-
-           <labe>Status do conteúdo:</labe>
+           <labe>Status:</labe>
 
            <br>
 
@@ -82,13 +82,15 @@
 
            <br> <br>
 
-           <label for="Período">Selecione o período:</label>
+           <label for="Período">Defina o horário:</label>
            <select name="Período" id="período">
 
                <option selected disabled>Selecione</option>
-               <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
-               <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
-               <Option value="Noite">Noite: 18:00 - 22:00</Option>
+               <Option value="Manhã">08:00 - 10:00</Option>
+               <Option value="Tarde">10:00 - 12:00</Option>
+               <Option value="Noite">13:00 - 15:00</Option>
+               <Option value="Noite">15:00 - 17:00</Option>
+               <Option value="Noite">18:00 - 20:00</Option>
 
            </select>
 
