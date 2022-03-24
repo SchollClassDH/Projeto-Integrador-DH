@@ -16,6 +16,7 @@ app.use('/js', express.static(__dirname + 'public/js'));
 
 // Difinir Visualização
 app.set('views', './views')
+app.set('views', './views')
 app.set('view engine', 'ejs')
 
 
