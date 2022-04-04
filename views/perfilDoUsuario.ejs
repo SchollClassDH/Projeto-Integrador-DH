@@ -9,10 +9,11 @@
     <title>Perfil do Usuário</title>
 </head>
 <body>
+  <%- include('/views/header.ejs'); %>
       <div class="form-container">
       <form method="get">
         <ul class="form-style-1">
-              <img src="img/avatar.png" class="avatar" alt="Imagem de Perfil do Usuário">
+              <img src="/public/img/avatar.png" class="avatar" alt="Imagem de Perfil do Usuário">
             <li><label>Nome Completo </label>
               <input type="text" name="nomeCompleto" class="field-long"/>
             </li>
