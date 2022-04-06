@@ -4,6 +4,7 @@ const express = require('express')
 const { engine } = require('express/lib/application')
 const app = express()
 const port = 3000
+
 const aulasRouter = require('./src/routes/aulas');
 
 // Arquivos Estaticos
@@ -27,7 +28,6 @@ app.get('/perfil', (req, res)=> {
 
 app.get('/', (req, res)=> {
     res.render("index")
-
 })
 
 app.use('/', aulasRouter);

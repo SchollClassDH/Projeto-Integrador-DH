@@ -5,20 +5,23 @@
     --white: #FFFFFF;
     --button: #D9DCF2;
 }
+
 *{
     margin: 0px;
     padding:0px;
     font-family: 'Poppins', sans-serif;
-    
 }
+
 body{
     background-color: var(--backgroud);
 }
+
 .avatar{
 	width: 100px;
 	height: 100px;
 	padding-left: 35%;
 }
+
 .form-container{
     width: 449px;
     height: 596px;
@@ -31,6 +34,7 @@ body{
     margin-top: 4%;
     
 }
+
 .form-style-1 {
     margin-top: 30px;
 	margin:10px auto;
@@ -38,18 +42,21 @@ body{
 	padding: 20px 12px 10px 20px;
 	
 }
+
 .form-style-1 li {
 	padding: 0;
 	display: block;
 	list-style: none;
 	margin: 10px 0 0 0;
 }
+
 .form-style-1 label{
 	margin:0 0 3px 0;
 	padding:0px;
 	display:block;
 	font-weight: bold;
 }
+
 .form-style-1 input[type=text], 
 .form-style-1 input[type=date],
 .form-style-1 input[type=datetime],
@@ -73,6 +80,7 @@ select{
 	-o-transition: all 0.30s ease-in-out;
 	outline: none;	
 }
+
 .form-style-1 input[type=text]:focus, 
 .form-style-1 input[type=date]:focus,
 .form-style-1 input[type=datetime]:focus,
@@ -88,6 +96,7 @@ select{
 	box-shadow: 0 0 8px var(--button);
 	border: 1px solid var(--button);
 }
+
 .form-style-1 .field-divided{
 	width: 49%;
 }
@@ -96,12 +105,15 @@ select{
 	width: 359px;
 
 }
+
 .form-style-1 .field-select{
 	width: 100%;
 }
+
 .form-style-1 .field-password{
 	height: 100px;
 }
+
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
     font-size: 18px;
     margin-top: 5px;
@@ -114,6 +126,7 @@ select{
 	border-radius: 20px;
 	color: #fff;
 }
+
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
 	background: var(--button);
 	box-shadow:none;
