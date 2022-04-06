@@ -1,0 +1,297 @@
+/*#header {
+    height: 632px;
+    width: 5%;
+    background: rgb(0, 255, 191);
+    border-radius: 5px;
+    float: left;
+}*/
+
+.sidebar{
+
+    position: fixed;
+    width: 8.1%;
+    height: 603px;
+    padding-top: 30px;
+    left: 0;
+    background: #193446;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: left;
+
+}
+
+/* aqui quand estuver a imagem do usuario */
+
+/* .sidebar .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+} */
+
+.sidebar h2{
+
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background ;
+
+}
+
+.sidebar a:hover{
+
+    background: #51b3ec;
+
+}
+
+.sidebar ion-icon{
+
+    padding-right: 10px;
+
+}
+
+label #sidebar_btn{
+
+    z-index: 1;
+    position: fixed;
+    left: 300px;
+    color: #fff;
+    font-size: 25px;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+label #sidebar_btn:hover{
+
+    color: #51b3ec; 
+
+}
+
+#check:checked ~ .sidebar{
+
+    left: -190px;
+
+}
+
+#check:checked ~ .sidebar a span{
+
+    display: none;
+
+}
+
+#check:checked ~ .sidebar a{
+
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+
+}
+
+#check{
+
+    display: none;
+
+}
+
+#segunda {
+    position: relative;
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: right;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#segunda .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#segunda .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#segunda .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#terca {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+
+#terca .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#terca .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#terca .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#quarta { 
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#quarta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#quarta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#quarta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#quinta {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#quinta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#quinta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+#quinta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#sexta {
+    height: 500px;
+    width: 18%;
+    background: rgb(255, 255, 255);
+    border: solid rgb(135 206 235);
+    float: left;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#sexta .dia {
+    position: relative;
+    height: 50px;
+    background: rgb(135 206 235);
+}
+
+#sexta .dia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    color: white;
+}
+
+#sexta .aulas ul{
+    list-style: none;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 40px;
+
+    color: #777777;
+}
+
+#footer {
+    height: 120px;
+    width: 92%;
+
+    float: right;
+    margin-top: 5px;
+    margin-left: 1px;
+    border-radius: 5px;
+
+    background: pink;
+}
