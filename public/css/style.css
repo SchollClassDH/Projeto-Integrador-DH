@@ -1,4 +1,141 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --backgroud: #F1F0F5;
+    --white: #FFFFFF;
+    --button: #D9DCF2;
+}
+
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--backgroud);
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	padding-left: 35%;
+}
+
+.form-container{
+    width: 449px;
+    height: 596px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-top: 4%;
+    
+}
+
+.form-style-1 {
+    margin-top: 30px;
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	
+}
+
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=file],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px var(--button);
+	-webkit-box-shadow: 0 0 8px var(--button);
+	box-shadow: 0 0 8px var(--button);
+	border: 1px solid var(--button);
+}
+
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 359px;
+
+}
+
+.form-style-1 .field-select{
+	width: 100%;
+}
+
+.form-style-1 .field-password{
+	height: 100px;
+}
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    font-size: 18px;
+    margin-top: 5px;
+    width: 100%;
+    height: 65;
+    justify-content: center;
+	background: var(--button);
+	padding: 8px 15px 8px 15px;
+    border: none;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: var(--button);
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+=======
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
@@ -240,4 +377,5 @@ select{
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 }
+
 
