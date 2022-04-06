@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/classOfWeek.css">
+    
+    <title>Aulas da Semana</title>
+</head>
+
+<body>
+
+    <%- include('./partials/header') %>
+
+    <% aulas.forEach((aula) => { %>
+        <div id="segunda">
+            <div class="dia">
+                
+                <%= aula.dia_semana %>
+                
+            </div>
+            <div class="aulas">
+                <ul>
+                    <li>13h - Aula de Gramática</li>
+                    <li>13h - Aula de Gramática</li>
+                    <li>13h - Aula de Gramática</li>
+                    <li>13h - Aula de Gramática</li>
+                    <li>13h - Aula de Gramática</li>
+                </ul>
+            </div>
+        </div>
+    <% }) %>
+
+
+    <%- include('./partials/footer') %>
+
+</body>
+</html>
