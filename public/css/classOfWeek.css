@@ -105,10 +105,10 @@ label #sidebar_btn:hover{
 
 #segunda {
     position: relative;
-    height: 500px;
+    height: 627px;
     width: 18%;
     background: rgb(255, 255, 255);
-    border: solid rgb(135 206 235);
+    border: solid #d9dcf2;
     float: right;
     margin: 1px;
     border-radius: 5px;
@@ -117,7 +117,7 @@ label #sidebar_btn:hover{
 #segunda .dia {
     position: relative;
     height: 50px;
-    background: rgb(135 206 235);
+    background: #d9dcf2;
 }
 
 #segunda .dia {
@@ -143,7 +143,7 @@ label #sidebar_btn:hover{
     height: 500px;
     width: 18%;
     background: rgb(255, 255, 255);
-    border: solid rgb(135 206 235);
+    border: solid #d9dcf2;
     float: left;
     margin: 1px;
     border-radius: 5px;
@@ -153,7 +153,7 @@ label #sidebar_btn:hover{
 #terca .dia {
     position: relative;
     height: 50px;
-    background: rgb(135 206 235);
+    background: #d9dcf2;
 }
 
 #terca .dia {
@@ -179,7 +179,7 @@ label #sidebar_btn:hover{
     height: 500px;
     width: 18%;
     background: rgb(255, 255, 255);
-    border: solid rgb(135 206 235);
+    border: solid #d9dcf2;
     float: left;
     margin: 1px;
     border-radius: 5px;
@@ -188,7 +188,7 @@ label #sidebar_btn:hover{
 #quarta .dia {
     position: relative;
     height: 50px;
-    background: rgb(135 206 235);
+    background: #d9dcf2;
 }
 
 #quarta .dia {
@@ -214,7 +214,7 @@ label #sidebar_btn:hover{
     height: 500px;
     width: 18%;
     background: rgb(255, 255, 255);
-    border: solid rgb(135 206 235);
+    border: solid #d9dcf2;
     float: left;
     margin: 1px;
     border-radius: 5px;
@@ -223,7 +223,7 @@ label #sidebar_btn:hover{
 #quinta .dia {
     position: relative;
     height: 50px;
-    background: rgb(135 206 235);
+    background: #d9dcf2;
 }
 
 #quinta .dia {
@@ -249,7 +249,7 @@ label #sidebar_btn:hover{
     height: 500px;
     width: 18%;
     background: rgb(255, 255, 255);
-    border: solid rgb(135 206 235);
+    border: solid #d9dcf2;
     float: left;
     margin: 1px;
     border-radius: 5px;
@@ -258,7 +258,7 @@ label #sidebar_btn:hover{
 #sexta .dia {
     position: relative;
     height: 50px;
-    background: rgb(135 206 235);
+    background: #d9dcf2;
 }
 
 #sexta .dia {
@@ -280,16 +280,4 @@ label #sidebar_btn:hover{
     line-height: 40px;
 
     color: #777777;
-}
-
-#footer {
-    height: 120px;
-    width: 92%;
-
-    float: right;
-    margin-top: 5px;
-    margin-left: 1px;
-    border-radius: 5px;
-
-    background: pink;
 }
