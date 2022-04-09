@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de tarefas</title>
+    <link rel="stylesheet" href="css/formularioTarefas.css">
+    <link rel="stylesheet" href="css/menuLateral.css">
+
+
+</head>
+
+<body>
+    
+
+    <!-- header começo -->
+
+     <header>
+         
+     </header>
+
+     <!-- header final -->
+
+     
+     <div class="sidebar">
+      
+   <!--imagem de perfil  -->
+   <img src="" alt="">
+   <h2>foto de perfil</h2>
+      
+      <a href="#"><ion-icon name="grid-outline"></ion-icon><span>Dashboard</span></a>
+      <a href="#"><ion-icon name="calendar-outline"></ion-icon><span>Calendario</span></a>
+      <a href="#"><ion-icon name="home-outline"></ion-icon><span>Tarefas de casa</span></a>
+      <a href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Chat</span></a>
+      <a href="#"><ion-icon name="people-outline"></ion-icon><span>Professores</span></a>
+  
+  
+  </div>
+  
+  
+  
+  <!-- sidebar final -->
+  
+    
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <br><br>
+
+                   
+
+  
+        <div class="box">
+
+        <form action= "/teste" method="post">
+
+
+            <fieldset>
+
+                <p><b><u>Adicionando Atividade:</p></b></u>
+                <br><br>
+
+                <label for="materia">Matéria:</label>
+        <input type="text" id="materia" name="materia" placeholder="Matéria Desejada" required>
+
+        <br> <br>
+        
+        <label for="conteudo">Conteúdo:</label>
+        <input type="text" id="conteudo" name="conteudo" placeholder="Conteúdo" required>
+        
+
+        <br> <br>
+
+        <labe>Status do conteúdo:</labe>
+
+        <br>
+
+        <input type="radio" id="Iniciando" name= "conteúdo" value="Iniciando" required><label for="Iniciando">Iniciando.</label>
+        <br>
+        <input type="radio" id="Pendente" name= "conteúdo" value="Pendente" required><label for="Pendente">Pendente.</label>
+        <br>
+        <input type="radio" id="Concluído" name= "conteúdo" value="Concluído" required><label for="Concluído">Concluído.</label>
+
+        <br> <br>
+
+        <label for="Período">Selecione o período:</label>
+        <select name="Período" id="período">
+
+            <option selected disabled>Selecione</option>
+            <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
+            <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
+            <Option value="Noite">Noite: 18:00 - 22:00</Option>
+
+        </select>
+
+        <br> <br>        
+
+        <label for="comentário">Comentários:</label>
+        <br>
+        <textarea name="comentários" id="comentário" cols="45" rows="5"></textarea>
+
+
+        <br>
+
+        <button type="reset">Limpar Campos</button>
+        <button type="submit">Enviar</button>
+
+            </fieldset>
+
+        </form>
+
+        </div>
+        
+    
+
+       
+    
+    </div>
+
+</body>
+
+</html>

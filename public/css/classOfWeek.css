@@ -77,31 +77,6 @@ label #sidebar_btn:hover{
 
 }
 
-#check:checked ~ .sidebar{
-
-    left: -190px;
-
-}
-
-#check:checked ~ .sidebar a span{
-
-    display: none;
-
-}
-
-#check:checked ~ .sidebar a{
-
-    font-size: 20px;
-    margin-left: 170px;
-    width: 80px;
-
-}
-
-#check{
-
-    display: none;
-
-}
 
 #segunda {
     position: relative;

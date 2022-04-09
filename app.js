@@ -7,6 +7,7 @@ const app = express()
 const port = 3000
 
 const aulasRouter = require('./src/routes/aulas');
+const tarefasRouter = require('./src/routes/tarefas');
 
 // Arquivos Estaticos
 
@@ -17,7 +18,6 @@ app.use('/js', express.static(__dirname + 'public/js'));
 
 
 // Difinir Visualização
-app.set('views', './views')
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
@@ -37,59 +37,16 @@ app.use('/', aulasRouter);
 // Listen 
 app.listen(port, () => console.info(`Aberto na porta ${port}`))
 
-// const createError = require('http-errors');
-// const express = require('express');
-// const path = require('path');
-// const cookieParser = require('cookie-parser');
-// const logger = require('morgan');
-
-// const aulasRouter = require('./src/routes/aulas');
 
 
-// const app = express();
-
-// // view engine setup
-// app.set('views', path.join(__dirname, 'src','views'));
-// app.set('view engine', 'ejs');
-
-// app.use(logger('dev'));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.use('/', aulasRouter);
 
 
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
-
-// // error handler
-// app.use(function(err, req, res, next) {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-//   // render the error page
-//   res.status(err.status || 500);
-//   res.render('error');
-// });
-
-// module.exports = app;
-
-=======
-
-const express = require('express');
 const path = require('path');
 const session = require('express-session');
 
 const authController = require('./src/controllers/authController');
 const usuariosRouter = require('./src/routes/usuarios');
 
-
-const app = express();
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src', 'views'));
@@ -99,6 +56,7 @@ app.use(express.static(path.join(__dirname, './public')));
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
+app.use('/', tarefasRouter);
 
 
 app.use(session({
@@ -128,9 +86,7 @@ app.get('/admin', estaAutorizado, (request, response) => {
 app.use('/usuarios', usuariosRouter);
 
 
-app.listen('3000', () => {
-    console.log('Aplicação executada na porta 3000');
-});
+
 
 function estaAutorizado(request, response, next) {
     if (request.session.autorizado) {
@@ -139,17 +95,11 @@ function estaAutorizado(request, response, next) {
 
     return response.redirect('/');
 }
-=======
-// importações 
 
-const express = require('express') 
-const { engine } = require('express/lib/application')
-const app = express()
-const port = 3000
 
 //Rotas
 const perfilRouter = require('./src/routes/perfil');
-const aulasRouter = require('./src/routes/aulas');
+
 
 
 // Arquivos Estaticos
@@ -160,10 +110,9 @@ app.use('/img', express.static(__dirname + 'public/img'));
 app.use('/js', express.static(__dirname + 'public/js'));
 
 
-// Difinir Visualização
-app.set('views', './views')
-app.set('views', './views')
-app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'src','views'));
+app.set('view engine', 'ejs');
+
 
 
 app.use('/', perfilRouter);
@@ -171,53 +120,9 @@ app.use('/', aulasRouter);
 
 
 app.get('/', (req, res)=> {
-    res.render("index")
+    res.render("/index")
 
 })
 
-// Listen 
-app.listen(port, () => console.info(`Aberto na porta ${port}`))
-
-// const createError = require('http-errors');
-// const express = require('express');
-// const path = require('path');
-// const cookieParser = require('cookie-parser');
-// const logger = require('morgan');
-
-// const aulasRouter = require('./src/routes/aulas');
-
-
-// const app = express();
-
-// // view engine setup
-// app.set('views', path.join(__dirname, 'src','views'));
-// app.set('view engine', 'ejs');
-
-// app.use(logger('dev'));
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));
-
-// app.use('/', aulasRouter);
-
-
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
-
-// // error handler
-// app.use(function(err, req, res, next) {
-//   // set locals, only providing error in development
-//   res.locals.message = err.message;
-//   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-//   // render the error page
-//   res.status(err.status || 500);
-//   res.render('error');
-// });
-
-// module.exports = app;
 
 
