@@ -1,8 +1,1 @@
-[
-    {
-        "id": "4b3640d1-5037-42f4-bb47-bcd7844771f0",
-        "nome": "ed",
-        "login": "ed",
-        "senha": "$2a$10$uxiDzWRowv7rJZ0DBauj1.9/FqRWvnSdPg/qM1OfzHRjSoTc/hemq"
-    }
-]
+[{"id":"4b3640d1-5037-42f4-bb47-bcd7844771f0","nome":"ed","login":"ed","senha":"$2a$10$uxiDzWRowv7rJZ0DBauj1.9/FqRWvnSdPg/qM1OfzHRjSoTc/hemq"},{"id":"e117f3ec-4b69-4adc-99ab-d65f27913f01","nome":"Felipe","login":"Felipe","senha":"$2a$10$lIE2sXfDV475sMOGr9dOf.fBBjNmYPixY.Y2pOwl1IpBD6.fdDTE2"}]

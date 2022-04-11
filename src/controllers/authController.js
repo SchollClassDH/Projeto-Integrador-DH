@@ -24,7 +24,7 @@ const authController = {
 
         request.session.autorizado = true;
 
-        return response.redirect('/admin/');
+        return response.redirect('/formulario/');
     },
 }
 
