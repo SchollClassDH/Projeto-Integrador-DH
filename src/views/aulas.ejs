@@ -7,12 +7,16 @@
     
     <link rel="stylesheet" href="./css/classOfWeek.css">   
     
+    
     <title>Aulas da Semana</title>
 </head>
 
 <body>
 
+
     <%- include('./partials/header') %>
+
+    <div class="semanas"> 
 
     <% aulas.forEach((aula) => { %>
         <div id="segunda">
@@ -33,6 +37,9 @@
         </div>
     <% }) %>
 
+
+                         </div>
+   
 
     <%- include('./partials/footer') %>
 
