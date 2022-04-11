@@ -6,25 +6,39 @@
     float: left;
 }*/
 
+
+
+
+.semanas{
+
+padding-left: 200px;
+padding-top: 100px;
+
+}
+
 .sidebar{
+
     position: fixed;
-    width: 8.1%;
-    height: 603px;
+    width: 250px;
+    height: 100%;
     padding-top: 30px;
     left: 0;
     background: #193446;
-    border-radius: 5px;
     transition: 0.5s;
     transition-property: left;
+    margin-top: 100px;
+    border-top-right-radius: 15px;
+
 }
+ 
+/* aqui quand estiver a imagem do usuario  */
 
-/* aqui quand estiver a imagem do usuario */
-
-/* .sidebar .image{
+.sidebar .image{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-} */
+
+} 
 
 .sidebar h2{
 
@@ -43,7 +57,7 @@
     padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
-    transition-property:background ;
+
 
 }
 

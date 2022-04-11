@@ -12,7 +12,39 @@
 
 <body>
 
+    <div class="sidebar">
+      
+        <!--imagem de perfil  -->
+        <img src="" alt="">
+     
+          <!-- ALTERAR ICONES -->
+     
+     
+        <h2>foto de perfil</h2>
+           
+           <a href="#"><ion-icon name="grid-outline"></ion-icon><span>Dashboard</span></a>
+           <a href="#"><ion-icon name="calendar-outline"></ion-icon><span>Calendario</span></a>
+           <a href="#"><ion-icon name="home-outline"></ion-icon><span>Tarefas de casa</span></a>
+           <a href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Chat</span></a>
+           <a href="#"><ion-icon name="people-outline"></ion-icon><span>Professores</span></a>
+       
+       
+       </div>
+       
+       <!-- sidebar final -->
+         
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
     <%- include('./partials/header') %>
+
+    <div class="semanas"> 
 
     <% aulas.forEach((aula) => { %>
         <div id="segunda">
@@ -33,6 +65,9 @@
         </div>
     <% }) %>
 
+
+                         </div>
+   
 
     <%- include('./partials/footer') %>
 
