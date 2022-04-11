@@ -38,7 +38,7 @@ app.use('/formAulas', formAulasRouter);
 // })
 
 app.get('/', (req, res)=> {
-    res.render("index")
+    res.render('login')
 })
 
 // const path = require('path');
