@@ -39,7 +39,7 @@ app.use('/formAulas', formAulasRouter);
 
 app.get('/', (req, res)=> {
     res.render('login')
-})
+});
 
 // const path = require('path');
 // const session = require('express-session');
