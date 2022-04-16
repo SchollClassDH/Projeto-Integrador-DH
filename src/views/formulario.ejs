@@ -8,10 +8,12 @@
     
     <link rel="stylesheet" href="/css/formularioTarefas.css">
     <link rel="stylesheet" href="/css/menuLateral.css">
+    
     <title>Tela de tarefas</title>
 </head>
 
 <body>
+
     
     <!-- header começo -->
 
@@ -22,30 +24,8 @@
      <!-- header final -->
 
      
-     <div class="sidebar">
-      
-   <!--imagem de perfil  -->
-   <img src="" alt="">
+     <%- include('./partials/header') %>
 
-     <!-- ALTERAR ICONES -->
-
-
-   <h2>foto de perfil</h2>
-      
-      <a href="#"><ion-icon name="grid-outline"></ion-icon><span>Dashboard</span></a>
-      <a href="#"><ion-icon name="calendar-outline"></ion-icon><span>Calendario</span></a>
-      <a href="#"><ion-icon name="home-outline"></ion-icon><span>Tarefas de casa</span></a>
-      <a href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Chat</span></a>
-      <a href="#"><ion-icon name="people-outline"></ion-icon><span>Professores</span></a>
-  
-  
-  </div>
-  
-  <!-- sidebar final -->
-    
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
   <br><br>
 
         <div class="box">
@@ -68,6 +48,20 @@
         
 
         <br> <br>
+
+        <label>Semana:</label>   
+        <br> 
+        <input type="radio" id="Segunda" name="Semana" value="Segunda" required><label for="Segunda">Segunda-Feira.</label>
+        <br>
+        <input type="radio" id="Terça" name="Semana" value="Terça" required><label for="Terça">Terça-Feira.</label>
+        <br>
+        <input type="radio" id="Quarta" name="Semana" value="Quarta" required><label for="Quarta">Quarta-Feira.</label>
+        <br>
+        <input type="radio" id="Quinta" name="Semana" value="Quinta" required><label for="Quinta">Quinta-Feira.</label>
+        <br>
+        <input type="radio" id="Sexta" name="Semana" value="Sexta" required><label for="Sexta">Sexta-Feira.</label>
+        <br><br>
+
 
         <labe>Status do conteúdo:</labe>
 
@@ -112,5 +106,7 @@
     </div>
 
 </body>
+
+
 
 </html>

@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/classOfWeek.css">   
+    <link rel="stylesheet" href="./css/classOfWeek.css"> 
+    <link rel="stylesheet" href="/css/menuLateral.css">  
     
     <title>Aulas da Semana</title>
 </head>
 
 <body>
 
-    <%- include('./partials/header') %>
+    
+
+    <%- include('./partials/header') %>  
+    
+    <div class="semanas">
 
     <% aulas.forEach((aula) => { %>
+
         <div id="segunda">
             <div class="dia">
                 
@@ -31,8 +37,11 @@
                 </ul>
             </div>
         </div>
+
     <% }) %>
 
+          
+    </div>
 
     <%- include('./partials/footer') %>
 
