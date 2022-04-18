@@ -21,6 +21,10 @@ fieldset{
 p{
     color: black;
     text-align: center;
+}
 
+body{
 
+    background-color: #ded8d8;
+    /* background-image: ; */
 }
