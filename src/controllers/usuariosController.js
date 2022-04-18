@@ -1,6 +1,7 @@
 const fs = require('fs');
 const {uuid}= require('uuidv4');
-const bcrypt=require('bcryptjs')
+const bcrypt=require('bcryptjs');
+
 
 const usuariosController = {
   create: (request, response) => {
