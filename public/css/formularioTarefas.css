@@ -9,7 +9,7 @@
 
 .box{
 
-    top: 250px;
+    top: 210px;
     left: 40%;
     position:absolute;
     background-color: rgba(0, 0, 0, 5);
@@ -29,7 +29,7 @@ fieldset{
 
 }
 p{
-    color: #fff;
+    
     text-align: center;
 }
 
@@ -40,6 +40,7 @@ body{
     /* background-repeat: no-repeat;  */
     /* background-position: center center; */
     background-size: 30%  30%;
+    
     
     
 
@@ -75,6 +76,42 @@ footer ul li.title {
 
     font-weight: bold;
     font-size: 20px;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #636363;
+    padding: 20px;
+}
+
+header nav {
+    flex-grow: 1.0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+
+    color: #fff;
+}
+
+.margin-list li {
+    margin: 0 10px;
+}
+
+header img{
+    margin-left: 20px;
 }
 
 
