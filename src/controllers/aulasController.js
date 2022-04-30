@@ -1,24 +1,16 @@
+
+const fs = require('fs');
 const aulasController = {
     index: (request, response) => {
-        const aulas = [
-            {
-                dia_semana: 'Segunda-Feira',
-            },
-            {
-                dia_semana: 'Terça-Feira',
-            },
-            {
-                dia_semana: 'Quarta-Feira',
-            },
-            {
-                dia_semana: 'Quinta-Feira',
-            },
-            {
-                dia_semana: 'Sexta-Feira',
-            }
-        ]
-
-        response.render('aulas', { title: 'Express', aulas });
+        const nomeArquivosTarefas = 'formAulas.json';
+        const tarefasArquivo = fs.readFileSync(nomeArquivosTarefas);
+        const tarefas = JSON.parse(tarefasArquivo);
+        response.render('aulas', { 
+            title: 'Express', 
+            tarefas,
+          
+            
+        });
     }
 }
 
