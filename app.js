@@ -11,21 +11,15 @@ const formAulasRouter = require('./src/routes/formAulas');
 const authController = require('./src/controllers/authController');
 const usuariosRouter = require('./src/routes/usuarios');
 const perfilRouter = require('./src/routes/perfil');
+// const loginRouter = require('./src/routes/login');
 
-// Arquivos Estaticos
-app.use(express.static('public'))
-app.use('/css', express.static(__dirname + 'public/css'));
-app.use('/img', express.static(__dirname + 'public/img'));
-app.use('/js', express.static(__dirname + 'public/js'));
-
-// Difinir Visualização
+        // Difinir Visualização
 app.set('views', './views')
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'src', 'views'));
 
 app.use(express.urlencoded({ extended: false }))
-app.use(express.static(path.join(__dirname, './public')));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
@@ -33,6 +27,7 @@ app.use('/', perfilRouter);
 app.use('/', aulasRouter);
 app.use('/formAulas', formAulasRouter);
 app.use('/usuarios', usuariosRouter);
+// app.use('/login', loginRouter);
 
 app.use(session({
     secret: 'XxdDQo4F5A*btj5Ai5#EWaA!I$'
@@ -43,10 +38,6 @@ app.post('/login', authController.login);
 
 app.get('/cadastro',(request, response) => {
     response.render('cadastro');
-});
-
-app.get('/login',(request, response) => {
-    response.render('login');
 });
 
 app.get('/formulario', estaAutorizado, (request, response) => {
