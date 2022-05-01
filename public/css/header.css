@@ -1,69 +1,41 @@
-.sidebar{
-  position: fixed;  
-  height: 603px;
-  padding-top: 30px;
-  left: 0;
-  background: #193446;
-  border-radius: 5px;
-  transition: 0.5s;
-  transition-property: left;
+header {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #636363;
+  padding: 20px;
+
 }
 
-/* aqui quand estiver a imagem do usuario */
+header nav {
 
-/* .sidebar .image{
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-} */
+  flex-grow: 1.0;
 
-.sidebar h2{
-
-  color: #ccc;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
-.sidebar a{
+header nav ul {
+
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
 
   color: #fff;
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  padding-left: 40px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  transition-property:background ;
 
 }
 
-.sidebar a:hover{
+.margin-list li {
 
-  background: #51b3ec;
-
-}
-
-.sidebar ion-icon{
-
-  padding-right: 10px;
+  margin: 0 10px;
 
 }
 
-label #sidebar_btn{
+header img{
 
-  z-index: 1;
-  position: fixed;
-  left: 300px;
-  color: #fff;
-  font-size: 25px;
-  margin: 5px 0;
-  cursor: pointer;
-
-}
-
-label #sidebar_btn:hover{
-
-  color: #51b3ec; 
-
+  margin-left: 20px;
+  
 }

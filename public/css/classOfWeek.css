@@ -1,12 +1,25 @@
-/*#header {
-    height: 632px;
-    width: 5%;
-    background: rgb(0, 255, 191);
-    border-radius: 5px;
-    float: left;
-}*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
 
-.sidebar{
+/* .semanas{
+
+    top: 210px;
+    left: 40%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 5);
+    border-radius: 15px;
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
+    
+} */
+
+/* .sidebar{
+
     position: fixed;
     width: 8.1%;
     height: 603px;
@@ -18,13 +31,13 @@
     transition-property: left;
 }
 
-/* aqui quand estiver a imagem do usuario */
+aqui quand estiver a imagem do usuario
 
-/* .sidebar .image{
+.sidebar .image{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-} */
+}
 
 .sidebar h2{
 
@@ -266,5 +279,5 @@ body{
 .semanas{
 
     padding-top: 100px;
-}
+} */
 
