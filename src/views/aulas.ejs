@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./css/classOfWeek.css">
     <link rel="stylesheet" href="/css/menuLateral.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <title>Aulas da Semana</title>
 </head>
@@ -15,6 +17,8 @@
 <body>
 
     <%- include('./partials/header') %>
+
+    <%- include('./partials/menu') %>
 
         <div class="semanas">
 
@@ -39,7 +43,7 @@
                                 </tr>
                             </thead>
 
-                            <tbody class='card'>
+                            <tbody class="card">
                                 <tr class="conteudos">
                                     <td id='nome' class='nome'>
                                         <%= tarefas.id %>
@@ -68,20 +72,16 @@
                                     </td>
                                 </tr>
                             </tbody>
-
-
-
                     </div>
                 </div>
-                <% }) %>
 
-
+            <% }) %>
 
         </div>
 
-        <%- include('./partials/footer') %>
-
 </body>
+
+<%- include('./partials/footer') %>
 
 </html>
 

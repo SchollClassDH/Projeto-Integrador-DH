@@ -8,6 +8,8 @@
     
     <link rel="stylesheet" href="/css/formularioTarefas.css">
     <link rel="stylesheet" href="/css/menuLateral.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     
     <title>Tela de tarefas</title>
 </head>
@@ -15,24 +17,13 @@
 
 <body>
 
-      
-    
-
-    
-    <!-- header começo -->
-
     <%- include('./partials/header') %>
-
-     <!-- header final -->
-
      
-     <%- include('./partials/menu') %>
-
-         
+    <%- include('./partials/menu') %>
 
   <br><br>
 
-        <div class="box">
+    <div class="box">
 
         <form action="/formAulas" method="post">
 
@@ -52,29 +43,29 @@
         
                 </select>
 
-        <br> <br>
+            <br> <br>
         
                 <label for="materia">Matéria:</label>
                 <input type="text" id="materia" name="materia" placeholder="Matéria desejda" required>
         
 
-        <br> <br>
+            <br> <br>
 
-        <label>Semana:</label>   
-        <br> 
-        <input type="radio" id="Segunda" name="Semana" value="Segunda" required><label for="Segunda">Segunda-Feira.</label>
-        <br>
-        <input type="radio" id="Terça" name="Semana" value="Terça" required><label for="Terça">Terça-Feira.</label>
-        <br>
-        <input type="radio" id="Quarta" name="Semana" value="Quarta" required><label for="Quarta">Quarta-Feira.</label>
-        <br>
-        <input type="radio" id="Quinta" name="Semana" value="Quinta" required><label for="Quinta">Quinta-Feira.</label>
-        <br>
-        <input type="radio" id="Sexta" name="Semana" value="Sexta" required><label for="Sexta">Sexta-Feira.</label>
-        <br><br>
+            <label>Semana:</label>   
+            <br> 
+            <input type="radio" id="Segunda" name="Semana" value="Segunda" required><label for="Segunda">Segunda-Feira.</label>
+            <br>
+            <input type="radio" id="Terça" name="Semana" value="Terça" required><label for="Terça">Terça-Feira.</label>
+            <br>
+            <input type="radio" id="Quarta" name="Semana" value="Quarta" required><label for="Quarta">Quarta-Feira.</label>
+            <br>
+            <input type="radio" id="Quinta" name="Semana" value="Quinta" required><label for="Quinta">Quinta-Feira.</label>
+            <br>
+            <input type="radio" id="Sexta" name="Semana" value="Sexta" required><label for="Sexta">Sexta-Feira.</label>
+            <br><br>
 
 
-        <labe>Status do conteúdo:</labe>
+            <labe>Status do conteúdo:</labe>
 
         <br>
 
@@ -112,15 +103,12 @@
 
         </form>
 
-        </div>
+    
         
     </div>
 
 
-       </main>
-
-
-       <%- include('./partials/footer') %>
+    <%- include('./partials/footer') %>
 
 
    

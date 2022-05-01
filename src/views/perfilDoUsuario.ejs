@@ -7,35 +7,48 @@
     <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menuLateral.css">
+    <link rel="stylesheet" href="css/footer.css">
     
     <title>Perfil do Usuário</title>
 </head>
+
 <body>
   <%- include('./partials/header') %>
-      <div class="form-container">
-      <form method="get">
-        <ul class="form-style-1">
-              
-            <li><label>Nome Completo </label>
-              <input type="text" name="nomeCompleto" class="field-long"/>
-            </li>
-            <li>
-                <label>Email </label>
-                <input type="email" name="email" class="field-long" />
-            </li>
-            <li><label>Endereço</label>
-              <input type="text" name="endereco" class="field-long"/>
-            </li>
-            <li><label>Localização 
-            </label><input type="text" name="cidade" class="field-divided" placeholder="Cidade" /> 
-            <input type="text" name="estado" class="field-divided" placeholder="Estado" /></li>
 
-            <li>
-                <input type="submit" value="Salvar" />
-                
-            </li>
-        </ul>
+  <%- include('./partials/menu') %>
+
+      <div class="form-container">
+        <form method="get">
+          <ul class="form-style-1">
+              
+              <li><label>Nome Completo </label>
+                <input type="text" name="nomeCompleto" class="field-long"/>
+              </li>
+
+              <li>
+                  <label>Email </label>
+                  <input type="email" name="email" class="field-long" />
+              </li>
+
+              <li><label>Endereço</label>
+                <input type="text" name="endereco" class="field-long"/>
+              </li>
+
+              <li><label>Localização 
+                </label><input type="text" name="cidade" class="field-divided" placeholder="Cidade" /> 
+                <input type="text" name="estado" class="field-divided" placeholder="Estado" />
+              </li>
+
+              <li>
+                  <input type="submit" value="Salvar" />
+                  
+              </li>
+          </ul>
         </form>
       </div>
+
+      <%- include('./partials/footer') %>
+
 </body>
 </html>

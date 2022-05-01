@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 :root{
     --backgroud: #F1F0F5;
     --white: #FFFFFF;
@@ -14,29 +15,36 @@
 }
 
 body{
-    background-color: var(--backgroud);
+
+    background-color: #ded8d8; 
+    background-image: url(../css/img/Img\ Study.svg);
+    background-size: 30%  30%;
+    
 }
 
 .avatar{
+
 	width: 100px;
 	height: 100px;
 	padding-left: 35%;
+
 }
 
 .form-container{
-    width: 449px;
-    height: 596px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 20px;
-    margin-left: 40%;
-    margin-top: 4%;
+
+	top: 210px;
+    left: 40%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 5);
+    border-radius: 15px;
+    list-style: none;
+    color: #fff;
+    font-size: 15px;
     
 }
 
 .form-style-1 {
+
     margin-top: 30px;
 	margin:10px auto;
 	max-width: 400px;
@@ -45,17 +53,21 @@ body{
 }
 
 .form-style-1 li {
+
 	padding: 0;
 	display: block;
 	list-style: none;
 	margin: 10px 0 0 0;
+
 }
 
 .form-style-1 label{
+
 	margin:0 0 3px 0;
 	padding:0px;
 	display:block;
 	font-weight: bold;
+
 }
 
 .form-style-1 input[type=text], 
