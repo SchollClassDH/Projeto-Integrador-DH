@@ -23,12 +23,6 @@ module.exports = (sequelize, DataTypes) => {
   const AlunoModel = sequelize.define('Aluno', tableDefinitions, tableConfiguration);
 
   AlunoModel.associate = (models) => {
-    AlunoModel.belongsToMany(models.Turma, {
-      as: 'turmas',
-      through: models.AlunoTurma,
-      foreignKey: 'alunoId',
-      otherKey: 'turmaId'
-    })
   }
 
   return AlunoModel;
