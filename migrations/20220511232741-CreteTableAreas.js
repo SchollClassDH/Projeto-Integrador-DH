@@ -5,7 +5,8 @@ module.exports = {
     return queryInterface.sequelize.query(`
       CREATE TABLE areas (
         id varchar(36) NOT NULL,
-        tipo varchar(255) DEFAULT NULL
+        tipo varchar(255) DEFAULT NULL,
+        PRIMARY KEY(id)
       )
     `);
   },
