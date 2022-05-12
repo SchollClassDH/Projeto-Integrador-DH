@@ -13,7 +13,8 @@ module.exports = {
         periodo varchar(100) NOT NULL,
         horario_inicio_fim time NOT NULL,
         area_id varchar(36) DEFAULT NULL,
-        PRIMARY KEY (id)
+        PRIMARY KEY (id),
+        FOREIGN KEY area_foreign(area_id) REFERENCES areas(id)	
       )
     `);
   },
