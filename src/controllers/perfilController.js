@@ -1,11 +1,13 @@
+const { Aluno } = require('../database/models');
+
 const perfilController = {
-    index: (request, response) => {
-        const perfil = [
+  index: async (request, response) => {
+    const alunoPerfil = await Aluno.findByPk(request.session.idUsuario)
 
-        ]
+    // console.log(alunoPerfil);
 
-        response.render('perfilDoUsuario', { title: 'Express', perfil });
-    }
+    response.render('perfilDoUsuario', { title: 'Express', alunoPerfil });
+  }
 }
 
 module.exports = perfilController

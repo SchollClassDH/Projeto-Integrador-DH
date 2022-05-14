@@ -1,31 +1,37 @@
 const usuarios = require('../../usuarios.json');
 const bcrypt = require('bcryptjs');
+const { Aluno } = require('../database/models');
+
 
 const authController = {
-    show: (request, response) => {
-        response.render('login');
-    },
-    login: (request, response) => {
-        
-        const { login, senha } = request.body;
+  show: (request, response) => {
+    response.render('login');
+  },
+  login: async (request, response) => {
 
-        const usuarioEncotrado = usuarios.find((usuario) => usuario.login === login);
+    const { login, senha } = request.body;
 
-        if (!usuarioEncotrado) {
-            return response.status(401).render('login');
-        }
+    const usuarioEncotrado = await Aluno.findOne({
+      where: {
+        email: login
+      }
+    });
 
+    if (!usuarioEncotrado) {
+      return response.status(401).render('login');
+    }
 
-        const ehSenhaCorreta = bcrypt.compareSync(senha, usuarioEncotrado.senha);
+    const ehSenhaCorreta = bcrypt.compareSync(senha, usuarioEncotrado.senha);
 
-        if (!ehSenhaCorreta) {
-            return response.status(401).render('login');
-        }
+    if (!ehSenhaCorreta) {
+      return response.status(401).render('login');
+    }
 
-        request.session.autorizado = true;
+    request.session.autorizado = true;
+    request.session.idUsuario = usuarioEncotrado.id;
 
-        return response.redirect('/formulario/');
-    },
+    return response.redirect('/formulario');
+  },
 }
 
 module.exports = authController;
