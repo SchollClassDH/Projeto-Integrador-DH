@@ -10,14 +10,14 @@
 // module.exports = router;
 
 
-const express = require('express');
+// const express = require('express');
 // const multer = require('multer');
 // const storage = require('../config/multer');
-const tarefasController = require('../controllers/tarefasController');
+// const tarefasController = require('../controllers/tarefasController');
 
-const router = express.Router();
+// const router = express.Router();
 // const upload = multer({ storage });
 
-router.post('/formulario',tarefasController.create);
+// router.post('/formulario',tarefasController.create);
 
-module.exports = router;
+// module.exports = router;
