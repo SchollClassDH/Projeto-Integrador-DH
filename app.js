@@ -12,6 +12,7 @@ const authController = require('./src/controllers/authController');
 const usuariosRouter = require('./src/routes/usuarios');
 const perfilRouter = require('./src/routes/perfil');
 // const loginRouter = require('./src/routes/login');
+const faleConosco = require('./src/controllers/faleConoscoController');
 
 // Difinir Visualização
 app.set('views', './views')
@@ -31,6 +32,7 @@ app.use('/', aulasRouter);
 app.use('/formAulas', formAulasRouter);
 app.use('/usuarios', usuariosRouter);
 // app.use('/login', loginRouter);
+app.use('/faleconosco', faleConosco);
 
 
 app.get('/', authController.show);
