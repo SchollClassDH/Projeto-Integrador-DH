@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       observacao: {
-        type: DataTypes.VARCHAR,
+        type: DataTypes.STRING,
       },
     }
   
