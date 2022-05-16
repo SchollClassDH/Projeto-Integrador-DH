@@ -1,4 +1,3 @@
-const usuarios = require('../../usuarios.json');
 const bcrypt = require('bcryptjs');
 const { Aluno } = require('../database/models');
 
