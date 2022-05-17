@@ -12,7 +12,7 @@ const authController = require('./src/controllers/authController');
 const usuariosRouter = require('./src/routes/usuarios');
 const perfilRouter = require('./src/routes/perfil');
 // const loginRouter = require('./src/routes/login');
-const faleConoscoRouter = require('./src/routes/faleConosco');
+const menuHeaderRouter = require('./src/routes/menuHeader');
 
 // Difinir Visualização
 app.set('views', './views')
@@ -29,10 +29,10 @@ app.use(session({
 }));
 app.use('/', perfilRouter);
 app.use('/', aulasRouter);
+app.use('/', menuHeaderRouter);
 app.use('/formAulas', formAulasRouter);
 app.use('/usuarios', usuariosRouter);
 // app.use('/login', loginRouter);
-app.use('/faleConosco', faleConoscoRouter);
 
 
 app.get('/', authController.show);
