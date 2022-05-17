@@ -60,7 +60,7 @@ main{
 
 .caixa-input{
     width: 583px;
-    height: 67px;
+    height: 40px;
 
     background: var(--letra-input);
     border: 1px solid var(--cinza);
