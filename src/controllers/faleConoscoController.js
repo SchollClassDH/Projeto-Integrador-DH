@@ -1,7 +1,6 @@
-// const faleConoscoController = {
-//     index: (request, response) => {
-//       response.render('faleConosco');
-//     },
-// }
-// module.exports = faleConoscoController
-
+const faleConoscoController = {
+    index: (request, response) => {
+      response.render('faleConosco', { title: 'Express'});
+    },
+}
+module.exports = faleConoscoController
