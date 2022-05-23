@@ -18,6 +18,6 @@ app.use(session({
 
 app.use(routerWithoutAuth, routerWithAuth);
 
-app.listen(3000, () => console.info(`Aberto na porta 3000`));
+app.listen(process.env.PORT, () => console.info(`Aberto na porta ${process.env.PORT}`));
 
 module.exports = app;
