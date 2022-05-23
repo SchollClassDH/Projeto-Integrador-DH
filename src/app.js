@@ -1,18 +1,16 @@
 // importações 
 const express = require('express')
-const { engine } = require('express/lib/application')
 const app = express()
 const path = require('path');
 const session = require('express-session');
 const port = 3000
 
-const aulasRouter = require('./src/routes/aulas');
-const formAulasRouter = require('./src/routes/formAulas');
-const authController = require('./src/controllers/authController');
-const usuariosRouter = require('./src/routes/usuarios');
-const perfilRouter = require('./src/routes/perfil');
-// const loginRouter = require('./src/routes/login');
-const menuHeaderRouter = require('./src/routes/menuHeader');
+const aulasRouter = require('./routes/aulas');
+const formAulasRouter = require('./routes/formAulas');
+const authController = require('./controllers/authController');
+const usuariosRouter = require('./routes/usuarios');
+const perfilRouter = require('./routes/perfil');
+const menuHeaderRouter = require('./routes/menuHeader');
 
 // Difinir Visualização
 app.set('views', './views')
@@ -32,9 +30,6 @@ app.use('/', aulasRouter);
 app.use('/', menuHeaderRouter);
 app.use('/formAulas', formAulasRouter);
 app.use('/usuarios', usuariosRouter);
-// app.use('/login', loginRouter);
-
-
 app.get('/', authController.show);
 app.post('/login', authController.login);
 
@@ -55,4 +50,6 @@ function estaAutorizado(request, response, next) {
   return response.redirect('/');
 }
 
-app.listen(port, () => console.info(`Aberto na porta ${port}`))
+app.listen(port, () => console.info(`Aberto na porta ${port}`));
+
+module.exports = app;
