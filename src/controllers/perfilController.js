@@ -5,10 +5,13 @@ const perfilController = {
     const alunoPerfil = await Aluno.findByPk(request.session.idUsuario);
     const alunoEmail = await Aluno.findByPk(request.session.idUsuario);
 
-    response.render('perfilDoUsuario', { title: 'Express',
-    alunoPerfil,
-    alunoEmail
-   });
+    console.log(request.session.idUsuario)
+
+    response.render('perfilDoUsuario', {
+      title: 'Express',
+      alunoPerfil,
+      alunoEmail
+    });
   }
 }
 

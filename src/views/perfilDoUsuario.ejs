@@ -18,40 +18,42 @@
 <body>
   <%- include('./partials/header') %>
 
-  <%- include('./partials/menu') %>
+  <main>
+    <%- include('./partials/menu') %>
 
-  <div class="form-container">
-    <form method="get">
-      <ul class="form-style-1">
+    <div class="form-container">
+      <form method="get">
+        <ul class="form-style-1">
 
-        <li><label>Nome Completo </label>
-          <input type="text" name="nomeCompleto" class="field-long" value="<%= alunoPerfil.nome %>" />
-        </li>
+          <li><label>Nome Completo </label>
+            <input type="text" name="nomeCompleto" class="field-long" value="<%= alunoPerfil.nome %>" />
+          </li>
 
-        <li>
-          <label>Email </label>
-          <input type="email" name="email" class="field-long" value="<%= alunoPerfil.email %>"/>
-        </li>
+          <li>
+            <label>Email </label>
+            <input type="email" name="email" class="field-long" value="<%= alunoPerfil.email %>" />
+          </li>
 
-        <li>
-          <label>Endereço</label>
-          <input type="text" name="endereco" class="field-long" />
-        </li>
+          <li>
+            <label>Endereço</label>
+            <input type="text" name="endereco" class="field-long" />
+          </li>
 
-        <li>
-          <label>Localização</label>
-          <input type="text" name="cidade" class="field-divided" placeholder="Cidade" />
-          <input type="text" name="estado" class="field-divided" placeholder="Estado" />
-        </li>
+          <li>
+            <label>Localização</label>
+            <input type="text" name="cidade" class="field-divided" placeholder="Cidade" />
+            <input type="text" name="estado" class="field-divided" placeholder="Estado" />
+          </li>
 
-        <li>
-          <input type="submit" value="Salvar" />
-        </li>
-      </ul>
-    </form>
-  </div>
-
+          <li>
+            <input type="submit" value="Salvar" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </main>
   <%- include('./partials/footer') %>
+
 
 </body>
 

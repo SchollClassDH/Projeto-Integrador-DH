@@ -18,20 +18,13 @@
 }
 
 .sidebar{
-
-    position:relative;
     width: 15%;
-    height: 65%;
-    padding-top: 30px;
-    left: 0;
+    height: 100%;
     background: #193446;
     transition: 0.5s;
     transition-property: left;
-    margin-top: 100px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;  
-    top: 50px
-
 }
  
 /* aqui quand estiver a imagem do usuario  */
