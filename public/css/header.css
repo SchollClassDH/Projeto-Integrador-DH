@@ -1,21 +1,16 @@
 header {
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #636363;
   padding: 20px;
-
 }
 
 header nav {
-
   flex-grow: 1.0;
-
 }
 
 header nav ul {
-
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -25,17 +20,17 @@ header nav ul {
   line-height: 33px;
 
   color: #fff;
-
 }
 
+
 .margin-list li {
-
   margin: 0 10px;
+}
 
+.margin-list li a {
+  text-decoration: none;
 }
 
 header img{
-
   margin-left: 20px;
-  
 }
