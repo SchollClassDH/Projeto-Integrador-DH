@@ -2,86 +2,76 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/classOfWeek.css">
-    <link rel="stylesheet" href="/css/menuLateral.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="./css/classOfWeek.css">
+  <link rel="stylesheet" href="/css/menuLateral.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-    <title>Aulas da Semana</title>
+  <title>Aulas da Semana</title>
 </head>
 
 <body>
 
-    <%- include('./partials/header') %>
+  <%- include('./partials/header') %>
 
+  <main>
     <%- include('./partials/menu') %>
+    <div class="semanas">
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Semana</th>
+            <th>Conteudo</th>
+            <th>Materia</th>
+            <th>Andamento</th>
+            <th>Período</th>
+            <th>Comentarios</th>
 
-        <div class="semanas">
+          </tr>
+        </thead>
 
+        <tbody>
+          <% tarefas.forEach((tarefas)=> { %>
+          <tr class="conteudos">
+            <td id='nome' class='nome'>
+              <%= tarefas.id %>
+            </td>
+            <td>
+              <%= tarefas.Semana %>
+            </td>
+            <td>
+              <%= tarefas.conteudo %>
+            </td>
+            <td>
+              <%= tarefas.materia %>
+            </td>
+            <td>
+              <%= tarefas.conteúdo %>
+            </td>
+            <td>
+              <%= tarefas.Período %>
+            </td>
+            <td>
+              <%= tarefas.comentários %>
+            </td>
+            <td class="center">
+              <img src="/css/img/editar.png" alt="">
+              <img src="/css/img/excluir.png" alt="">
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+  </main>
 
-            <% tarefas.forEach((tarefas)=> { %>
-                <div class="card">
-
-                    <div class="content">
-
-                        <table border="1">
-                            <thead>
-                                <tr>
-
-                                    <th>ID</th>
-                                    <th>Semana</th>
-                                    <th>Conteudo</th>
-                                    <th>Materia</th>
-                                    <th>Andamento</th>
-                                    <th>Período</th>
-                                    <th>Comentarios</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody class="card">
-                                <tr class="conteudos">
-                                    <td id='nome' class='nome'>
-                                        <%= tarefas.id %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.Semana %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.conteudo %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.materia %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.conteúdo %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.Período %>
-                                    </td>
-                                    <td>
-                                        <%= tarefas.comentários %>
-                                    </td>
-                                    <td class="center">
-                                        <img src="/css/img/editar.png" alt="">
-                                        <img src="/css/img/excluir.png" alt="">
-                                    </td>
-                                </tr>
-                            </tbody>
-                    </div>
-                </div>
-
-            <% }) %>
-
-        </div>
-
+  <%- include('./partials/footer') %>
 </body>
-
-<%- include('./partials/footer') %>
 
 </html>
 

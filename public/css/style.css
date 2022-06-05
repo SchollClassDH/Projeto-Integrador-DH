@@ -147,6 +147,10 @@ select{
 	-webkit-box-shadow:none;
 }
 
+main {
+  display: flex;
+  height: 100vh;
+}
 
 
 
