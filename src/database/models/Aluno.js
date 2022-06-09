@@ -10,7 +10,13 @@ module.exports = (sequelize, DataTypes) => {
     email: {
       type: DataTypes.STRING,
     },
-    senha: {
+    logradouro: {
+      type: DataTypes.STRING,
+    },
+    cidade: {
+      type: DataTypes.STRING,
+    },
+    estado: {
       type: DataTypes.STRING,
     },
   }
