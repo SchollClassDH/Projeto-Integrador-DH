@@ -8,14 +8,20 @@
 }
 
 .box {
-  top: 210px;
-  left: 40%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 5);
+  display: flex;
+
   border-radius: 15px;
   list-style: none;
   color: #fff;
   font-size: 15px;
+}
+
+.box form {
+  background-color: #000;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 fieldset {
@@ -23,6 +29,16 @@ fieldset {
   border-radius: 15px;
   padding: 20px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend {
+  text-align: center;
+}
+
+fieldset label:not(:first-of-type) {
+  margin-top: 10px;
 }
 
 p {

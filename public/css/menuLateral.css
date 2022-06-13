@@ -1,90 +1,69 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .left h3 {
-
-    color: #fff;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 800;
-
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 800;
 }
 
-.sidebar{
-    width: 15%;
-    height: 100%;
-    background: #193446;
-    transition: 0.5s;
-    transition-property: left;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;  
+.sidebar {
+  width: 15%;
+  background: #193446;
+  transition: 0.5s;
+  transition-property: left;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
- 
+
 /* aqui quand estiver a imagem do usuario  */
 
-.sidebar .image{
-
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-
-} 
-
-.sidebar h2{
-
-    color: #ccc;
-    margin-top: 0;
-    margin-bottom: 20px;
-
+.sidebar .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
 
-.sidebar a{
-
-    color: #fff;
-    display: block;
-    width: 100%;
-    line-height: 60px;
-    text-decoration: none;
-    padding-left: 40px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    
+.sidebar h2 {
+  color: #ccc;
+  margin-top: 0;
+  margin: 16px;
 }
 
-.sidebar a:hover{
-
-    background: #51b3ec;
-
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
 
-.sidebar ion-icon{
-
-    padding-right: 10px;
-
+.sidebar a:hover {
+  background: #51b3ec;
 }
 
-label #sidebar_btn{
-
-    z-index: 1;
-    position: flex;
-    left: 300px;
-    color: #fff;
-    font-size: 25px;
-    margin: 5px 0;
-    cursor: pointer;
-
+.sidebar ion-icon {
+  padding-right: 10px;
 }
 
-label #sidebar_btn:hover{
-
-    color: #51b3ec; 
-
+label #sidebar_btn {
+  z-index: 1;
+  position: flex;
+  left: 300px;
+  color: #fff;
+  font-size: 25px;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
+label #sidebar_btn:hover {
+  color: #51b3ec;
+}
