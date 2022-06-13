@@ -31,6 +31,10 @@ const authController = {
 
     return response.redirect('/formulario');
   },
+  logout: (request, response) => {
+    req.session.destroy(null);
+    response.redirect('login');
+  },
 }
 
 module.exports = authController;

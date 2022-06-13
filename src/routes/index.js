@@ -5,6 +5,8 @@ const formAulasRouter = require('./formAulas');
 const usuariosRouter = require('./usuarios');
 const perfilRouter = require('./perfil');
 const menuHeaderRouter = require('./menuHeader');
+const loginRouter = require('./login');
+
 const authController = require('../controllers/authController');
 const estaAutorizado = require('../middleware/estaAutenticado');
 
@@ -26,7 +28,10 @@ routerWithAuth.get('/formulario', estaAutorizado, (request, response) => {
   response.render('formulario');
 });
 
-routerWithoutAuth.get('/', authController.show);
-routerWithoutAuth.post('/login', authController.login);
+routerWithoutAuth.use('/login', loginRouter);
+routerWithAuth.get('/logout', authController.logout);
+routerWithoutAuth.get('/', (_, response) =>
+  response.redirect('login')
+);
 
 module.exports = { routerWithAuth, routerWithoutAuth };
