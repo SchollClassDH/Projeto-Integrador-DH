@@ -4,7 +4,6 @@ const { Aluno } = require('../database/models');
 
 const authController = {
   show: (request, response) => {
-    console.log('teste');
     response.render('login');
   },
   login: async (request, response) => {

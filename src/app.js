@@ -13,7 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 
 app.use(session({
-  secret: 'XxdDQo4F5A*btj5Ai5#EWaA!I$'
+  secret: 'XxdDQo4F5A*btj5Ai5#EWaA!I$',
+  resave: true,
+  saveUninitialized: true
 }));
 
 app.use(routerWithoutAuth, routerWithAuth);

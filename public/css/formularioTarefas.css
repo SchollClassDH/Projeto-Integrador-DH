@@ -1,46 +1,36 @@
 /* formulario de tarefas */
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.box{
-
-    top: 210px;
-    left: 40%;
-    position:absolute;
-    background-color: rgba(0, 0, 0, 5);
-    border-radius: 15px;
-    list-style: none;
-    color: #fff;
-    font-size: 15px;
-    
+.box {
+  top: 210px;
+  left: 40%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 5);
+  border-radius: 15px;
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
 }
 
-fieldset{
-
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    color: #fff;
-
+fieldset {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  color: #fff;
 }
 
-p{
-    
-    text-align: center;
-    
+p {
+  text-align: center;
 }
 
-body{
-
-    background-color: #ded8d8; 
-    background-image: url(../css/img/Img\ Study.svg);
-    /* background-repeat: no-repeat;  */
-    /* background-position: center center; */
-    background-size: 30%  30%;
-    
+body {
+  background-color: #ded8d8;
+  background-image: url("/img/Study.svg");
+  background-size: 30% 30%;
 }
