@@ -1,7 +1,6 @@
 const bcrypt = require('bcryptjs');
 const { Aluno } = require('../database/models');
 
-
 const authController = {
   show: (request, response) => {
     response.render('login');

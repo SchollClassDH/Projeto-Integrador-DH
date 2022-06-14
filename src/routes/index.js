@@ -20,11 +20,11 @@ routerWithAuth.use('/aulas', aulasRouter);
 routerWithAuth.use('/formAulas', formAulasRouter);
 routerWithAuth.use('/usuarios', usuariosRouter);
 routerWithAuth.use('/menu', menuHeaderRouter);
-routerWithAuth.get('/cadastro', (request, response) => {
+routerWithAuth.get('/cadastro', (_, response) => {
   response.render('cadastro');
 });
 
-routerWithAuth.get('/formulario', estaAutorizado, (request, response) => {
+routerWithAuth.get('/formulario', (_, response) => {
   response.render('formulario');
 });
 
