@@ -1,30 +1,24 @@
 footer {
-
-    background-color: #636363;
-    display:flex;
-    justify-content: space-evenly;
-    padding: 15px;
-  
+  margin-top: 15px;
+  background-color: #636363;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
 }
 
 footer ul {
-
-    list-style: none;
-    color: #fff;
-    font-size: 15px;
-    
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
 }
 
-footer a{
-
-    color: #fff;
-    font-size: 30px;
-    padding: 5px;
-
+footer a {
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
 }
 
 footer ul li.title {
-
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }

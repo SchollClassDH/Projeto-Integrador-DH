@@ -1,10 +1,9 @@
 const bcrypt = require('bcryptjs');
 const { Aluno } = require('../database/models');
 
-
 const authController = {
   show: (request, response) => {
-    console.log('teste');
+    // console.log('login');
     response.render('login');
   },
   login: async (request, response) => {
@@ -20,7 +19,7 @@ const authController = {
     if (!usuarioEncotrado) {
       return response.status(401).render('login');
     }
-
+    console.log(senha, usuarioEncotrado)
     const ehSenhaCorreta = bcrypt.compareSync(senha, usuarioEncotrado.senha);
 
     if (!ehSenhaCorreta) {
@@ -31,6 +30,10 @@ const authController = {
     request.session.idUsuario = usuarioEncotrado.id;
 
     return response.redirect('/formulario');
+  },
+  logout: (request, response) => {
+    req.session.destroy(null);
+    response.redirect('login');
   },
 }
 
