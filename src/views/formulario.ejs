@@ -1,119 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <link rel="stylesheet" href="/css/formularioTarefas.css">
-    <link rel="stylesheet" href="/css/menuLateral.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    
-    <title>Tela de tarefas</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/formularioTarefas.css">
+  <link rel="stylesheet" href="/css/menuLateral.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <title>Tela de tarefas</title>
 </head>
 
 
 <body>
 
-    <%- include('./partials/header') %>
-     
+  <%- include('./partials/header') %>
+
+  <div class="box">
     <%- include('./partials/menu') %>
 
-  <br><br>
+    <form action="/formAulas" method="post">
+      <fieldset>
+        <legend>
+          <strong><u>Adicionando Aula:</u></strong>
+        </legend>
 
-    <div class="box">
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso">
+          <option selected disabled>Selecione o curso</option>
+          <option value="Fullstack">Fullstack</option>
+          <option value="Linkedin">Linkedin</option>
+          <option value="html/css avançado">html/css avançado</option>
+        </select>
 
-        <form action="/formAulas" method="post">
+        <label for="materia">Matéria:</label>
+        <input type="text" id="materia" name="materia" placeholder="Matéria desejda" required>
 
+        <label>Semana:</label>
 
-            <fieldset>
+        <div>
+          <input type="radio" id="Segunda" name="Semana" value="Segunda" required>
+          <label for="Segunda">Segunda-Feira.</label>
+        </div>
 
-                <p><b><u>Adicionando Aula:</p></b></u>
-                <br><br>
+        <div>
+          <input type="radio" id="Terça" name="Semana" value="Terça" required>
+          <label for="Terça">Terça-Feira.</label>
+        </div>
 
-                <label for="curso">Curso:</label>
-                <select name="curso" id="curso">
+        <div>
+          <input type="radio" id="Quarta" name="Semana" value="Quarta" required>
+          <label for="Quarta">Quarta-Feira.</label>
+        </div>
 
-                    <option selected disabled>Selecione o curso</option>
-                    <Option value="Fullstack">Fullstack</Option>
-                    <Option value="Linkedin">Linkedin</Option>
-                    <Option value="html/css avançado">html/css avançado</Option>
-        
-                </select>
+        <div>
+          <input type="radio" id="Quinta" name="Semana" value="Quinta" required>
+          <label for="Quinta">Quinta-Feira.</label>
+        </div>
 
-            <br> <br>
-        
-                <label for="materia">Matéria:</label>
-                <input type="text" id="materia" name="materia" placeholder="Matéria desejda" required>
-        
+        <div>
+          <input type="radio" id="Sexta" name="Semana" value="Sexta" required>
+          <label for="Sexta">Sexta-Feira.</label>
+        </div>
 
-            <br> <br>
+        <label>Status do conteúdo:</label>
 
-            <label>Semana:</label>   
-            <br> 
-            <input type="radio" id="Segunda" name="Semana" value="Segunda" required><label for="Segunda">Segunda-Feira.</label>
-            <br>
-            <input type="radio" id="Terça" name="Semana" value="Terça" required><label for="Terça">Terça-Feira.</label>
-            <br>
-            <input type="radio" id="Quarta" name="Semana" value="Quarta" required><label for="Quarta">Quarta-Feira.</label>
-            <br>
-            <input type="radio" id="Quinta" name="Semana" value="Quinta" required><label for="Quinta">Quinta-Feira.</label>
-            <br>
-            <input type="radio" id="Sexta" name="Semana" value="Sexta" required><label for="Sexta">Sexta-Feira.</label>
-            <br><br>
+        <div>
+          <input type="radio" id="Iniciando" name="conteúdo" value="Iniciando" required>
+          <label for="Iniciando">Iniciando.</label>
+        </div>
 
+        <div>
+          <input type="radio" id="Pendente" name="conteúdo" value="Pendente" required>
+          <label for="Pendente">Pendente.</label>
+        </div>
 
-            <labe>Status do conteúdo:</labe>
-
-        <br>
-
-        <input type="radio" id="Iniciando" name= "conteúdo" value="Iniciando" required><label for="Iniciando">Iniciando.</label>
-        <br>
-        <input type="radio" id="Pendente" name= "conteúdo" value="Pendente" required><label for="Pendente">Pendente.</label>
-        <br>
-        <input type="radio" id="Concluído" name= "conteúdo" value="Concluído" required><label for="Concluído">Concluído.</label>
-
-        <br> <br>
+        <div>
+          <input type="radio" id="Concluído" name="conteúdo" value="Concluído" required>
+          <label for="Concluído">Concluído.</label>
+        </div>
 
         <label for="Período">Selecione o período:</label>
         <select name="Período" id="período">
-
-            <option selected disabled>Selecione</option>
-            <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
-            <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
-            <Option value="Noite">Noite: 18:00 - 22:00</Option>
-
+          <option selected disabled>Selecione</option>
+          <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
+          <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
+          <Option value="Noite">Noite: 18:00 - 22:00</Option>
         </select>
 
-        <br> <br>        
-
         <label for="comentário">Observação:</label>
-        <br>
         <textarea name="comentários" id="comentário" cols="45" rows="5"></textarea>
-
-
-        <br>
 
         <button type="reset">Limpar Campos</button>
         <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </div>
 
-            </fieldset>
-
-        </form>
-
-    
-        
-    </div>
-
-
-    <%- include('./partials/footer') %>
-
-
-   
+  <%- include('./partials/footer') %>
 </body>
-
-
 
 </html>

@@ -1,7 +1,6 @@
 const bcrypt = require('bcryptjs');
 const { Aluno } = require('../database/models');
 
-
 const authController = {
   show: (request, response) => {
     // console.log('login');
@@ -31,6 +30,10 @@ const authController = {
     request.session.idUsuario = usuarioEncotrado.id;
 
     return response.redirect('/formulario');
+  },
+  logout: (request, response) => {
+    req.session.destroy(null);
+    response.redirect('login');
   },
 }
 

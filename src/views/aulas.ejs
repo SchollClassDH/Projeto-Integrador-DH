@@ -22,26 +22,21 @@
   <main>
     <%- include('./partials/menu') %>
     <div class="semanas">
-      <table border="1">
+      <table aria-describedby="tabela-aulas">
         <thead>
           <tr>
-            <th>ID</th>
             <th>Semana</th>
             <th>Conteudo</th>
             <th>Materia</th>
             <th>Andamento</th>
             <th>Período</th>
             <th>Comentarios</th>
-
           </tr>
         </thead>
 
         <tbody>
           <% tarefas.forEach((tarefas)=> { %>
           <tr class="conteudos">
-            <td id='nome' class='nome'>
-              <%= tarefas.id %>
-            </td>
             <td>
               <%= tarefas.Semana %>
             </td>
