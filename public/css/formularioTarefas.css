@@ -7,9 +7,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ded8d8;
+  background-image: url("/img/Study.svg");
+  background-size: 30% 30%;
+}
+
 .box {
   display: flex;
-
+  margin: 10px auto;
   border-radius: 15px;
   list-style: none;
   color: #fff;
@@ -27,7 +33,7 @@
 fieldset {
   border: 3px solid black;
   border-radius: 15px;
-  padding: 20px;
+  padding: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -45,8 +51,7 @@ p {
   text-align: center;
 }
 
-body {
-  background-color: #ded8d8;
-  background-image: url("/img/Study.svg");
-  background-size: 30% 30%;
+main {
+  display: flex;
+  height: 100vh;
 }
