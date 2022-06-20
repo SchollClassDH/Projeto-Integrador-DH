@@ -7,98 +7,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="/css/formularioTarefas.css">
-  <link rel="stylesheet" href="/css/menuLateral.css">
   <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/menuLateral.css">
   <link rel="stylesheet" href="/css/footer.css">
 
-  <title>Tela de tarefas</title>
+  <title>Tela de Tarefas</title>
 </head>
 
 
 <body>
-
+ 
   <%- include('./partials/header') %>
 
-  <div class="box">
+  <main>
     <%- include('./partials/menu') %>
+      
+    <div class="box">
+      <form action="/formAulas" method="post">
+        <fieldset>
+          <legend>
+            <strong><u>Adicionando Aula:</u></strong>
+          </legend>
 
-    <form action="/formAulas" method="post">
-      <fieldset>
-        <legend>
-          <strong><u>Adicionando Aula:</u></strong>
-        </legend>
+          <label for="curso">Curso:</label>
+          <select name="curso" id="curso">
+            <option selected disabled>Selecione o curso</option>
+            <option value="Fullstack">Fullstack</option>
+            <option value="Linkedin">Linkedin</option>
+            <option value="html/css avançado">html/css avançado</option>
+          </select>
 
-        <label for="curso">Curso:</label>
-        <select name="curso" id="curso">
-          <option selected disabled>Selecione o curso</option>
-          <option value="Fullstack">Fullstack</option>
-          <option value="Linkedin">Linkedin</option>
-          <option value="html/css avançado">html/css avançado</option>
-        </select>
+          <label for="materia">Matéria:</label>
+          <input type="text" id="materia" name="materia" placeholder="Matéria desejda" required>
 
-        <label for="materia">Matéria:</label>
-        <input type="text" id="materia" name="materia" placeholder="Matéria desejda" required>
+          <label>Semana:</label>
 
-        <label>Semana:</label>
+          <div>
+            <input type="radio" id="Segunda" name="Semana" value="Segunda" required>
+            <label for="Segunda">Segunda-Feira.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Segunda" name="Semana" value="Segunda" required>
-          <label for="Segunda">Segunda-Feira.</label>
-        </div>
+          <div>
+            <input type="radio" id="Terça" name="Semana" value="Terça" required>
+            <label for="Terça">Terça-Feira.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Terça" name="Semana" value="Terça" required>
-          <label for="Terça">Terça-Feira.</label>
-        </div>
+          <div>
+            <input type="radio" id="Quarta" name="Semana" value="Quarta" required>
+            <label for="Quarta">Quarta-Feira.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Quarta" name="Semana" value="Quarta" required>
-          <label for="Quarta">Quarta-Feira.</label>
-        </div>
+          <div>
+            <input type="radio" id="Quinta" name="Semana" value="Quinta" required>
+            <label for="Quinta">Quinta-Feira.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Quinta" name="Semana" value="Quinta" required>
-          <label for="Quinta">Quinta-Feira.</label>
-        </div>
+          <div>
+            <input type="radio" id="Sexta" name="Semana" value="Sexta" required>
+            <label for="Sexta">Sexta-Feira.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Sexta" name="Semana" value="Sexta" required>
-          <label for="Sexta">Sexta-Feira.</label>
-        </div>
+          <label>Status do conteúdo:</label>
 
-        <label>Status do conteúdo:</label>
+          <div>
+            <input type="radio" id="Iniciando" name="conteúdo" value="Iniciando" required>
+            <label for="Iniciando">Iniciando.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Iniciando" name="conteúdo" value="Iniciando" required>
-          <label for="Iniciando">Iniciando.</label>
-        </div>
+          <div>
+            <input type="radio" id="Pendente" name="conteúdo" value="Pendente" required>
+            <label for="Pendente">Pendente.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Pendente" name="conteúdo" value="Pendente" required>
-          <label for="Pendente">Pendente.</label>
-        </div>
+          <div>
+            <input type="radio" id="Concluído" name="conteúdo" value="Concluído" required>
+            <label for="Concluído">Concluído.</label>
+          </div>
 
-        <div>
-          <input type="radio" id="Concluído" name="conteúdo" value="Concluído" required>
-          <label for="Concluído">Concluído.</label>
-        </div>
+          <label for="Período">Selecione o período:</label>
+          <select name="Período" id="período">
+            <option selected disabled>Selecione</option>
+            <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
+            <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
+            <Option value="Noite">Noite: 18:00 - 22:00</Option>
+          </select>
 
-        <label for="Período">Selecione o período:</label>
-        <select name="Período" id="período">
-          <option selected disabled>Selecione</option>
-          <Option value="Manhã">Manhã: 08:00 - 12:00</Option>
-          <Option value="Tarde">Tarde: 13:00 - 17:00</Option>
-          <Option value="Noite">Noite: 18:00 - 22:00</Option>
-        </select>
+          <label for="comentário">Observação:</label>
+          <textarea name="comentários" id="comentário" cols="45" rows="5"></textarea>
 
-        <label for="comentário">Observação:</label>
-        <textarea name="comentários" id="comentário" cols="45" rows="5"></textarea>
-
-        <button type="reset">Limpar Campos</button>
-        <button type="submit">Enviar</button>
-      </fieldset>
-    </form>
-  </div>
+          <button type="reset">Limpar Campos</button>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
 
   <%- include('./partials/footer') %>
 </body>
