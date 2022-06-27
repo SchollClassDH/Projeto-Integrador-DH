@@ -1,7 +1,6 @@
-const { Aluno } = require('../database/models')
-
 const {uuid} = require('uuidv4');
 const bcrypt = require('bcryptjs');
+const { Aluno } = require('../database/models')
 
 const usuariosController = {
   create: async (request, response) => {

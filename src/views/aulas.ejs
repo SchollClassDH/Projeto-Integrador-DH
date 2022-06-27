@@ -35,32 +35,32 @@
         </thead>
 
         <tbody>
-          <% tarefas.forEach((tarefas)=> { %>
+         
           <tr class="conteudos">
             <td>
-              <%= tarefas.Semana %>
+              <input type="text" value="<%= tarefasAulas.semana %>"/>
             </td>
             <td>
-              <%= tarefas.conteudo %>
+              <input type="text" value="<%= tarefasAulas.conteudo %>"/>
             </td>
             <td>
-              <%= tarefas.materia %>
+              <input type="text" value="<%= tarefasAulas.materia %>"/>
             </td>
             <td>
-              <%= tarefas.conteúdo %>
+              <input type="text" value="<%= tarefasAulas.conteúdo %>"/>
             </td>
             <td>
-              <%= tarefas.Período %>
+              <input type="text" value="<%= tarefasAulas.periodo %>"/>
             </td>
             <td>
-              <%= tarefas.comentários %>
+              <input type="text" value="<%= tarefasAulas.comentários %>"/>
             </td>
             <td class="center">
               <img src="/css/img/editar.png" alt="">
               <img src="/css/img/excluir.png" alt="">
             </td>
           </tr>
-          <% }) %>
+          
         </tbody>
       </table>
   </main>
@@ -69,5 +69,3 @@
 </body>
 
 </html>
-
-<!-- Teste Branch -->

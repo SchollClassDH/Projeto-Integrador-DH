@@ -1,7 +1,6 @@
 const { Router } = require('express');
 
 const aulasRouter = require('./aulas');
-const formAulasRouter = require('./formAulas');
 const usuariosRouter = require('./usuarios');
 const perfilRouter = require('./perfil');
 const menuHeaderRouter = require('./menuHeader');
@@ -21,7 +20,6 @@ routerWithAuth.use(estaAutorizado);
 
 routerWithAuth.use('/perfil', perfilRouter);
 routerWithAuth.use('/aulas', aulasRouter);
-routerWithAuth.use('/formAulas', formAulasRouter);
 routerWithAuth.use('/usuarios', usuariosRouter);
 routerWithAuth.use('/menu', menuHeaderRouter);
 
