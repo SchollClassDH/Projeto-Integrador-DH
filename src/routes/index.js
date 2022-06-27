@@ -23,11 +23,6 @@ routerWithAuth.use('/aulas', aulasRouter);
 routerWithAuth.use('/usuarios', usuariosRouter);
 routerWithAuth.use('/menu', menuHeaderRouter);
 
-
-routerWithAuth.get('/formulario', (_, response) => {
-  response.render('formulario');
-});
-
 routerWithoutAuth.use('/login', loginRouter);
 routerWithAuth.get('/logout', authController.logout);
 routerWithoutAuth.get('/', (_, response) =>

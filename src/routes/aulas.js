@@ -4,5 +4,6 @@ const aulasController = require('../controllers/aulasController')
 
 router.get('/', aulasController.index);
 router.post('/', aulasController.create);
+router.get('/register', aulasController.registerScreen);
 
 module.exports = router;

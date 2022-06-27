@@ -1,5 +1,6 @@
-const {uuid} = require('uuidv4');
+const { v4: uuid } = require('uuid');
 const bcrypt = require('bcryptjs');
+
 const { Aluno } = require('../database/models')
 
 const usuariosController = {
@@ -8,12 +9,12 @@ const usuariosController = {
 
     const novoUsuario = {
       id: uuid(),
-      ...request.body, 
-      senha:hash
+      ...request.body,
+      senha: hash
     }
 
     await Aluno.create(novoUsuario);
- 
+
     response.render('login', {
       title: 'Express',
     });
