@@ -19,6 +19,19 @@ const usuariosController = {
       title: 'Express',
     });
   },
+  update: async (request, response) => {
+    console.log(request)
+    await Aluno.update(request.body, {
+      where: {
+        id: request.session.idUsuario
+      }
+    });
+
+    response.redirect('/perfil');
+  },
+  registerScreen: (_, response) => {
+    response.render('cadastro');
+  }
 }
 
 module.exports = usuariosController

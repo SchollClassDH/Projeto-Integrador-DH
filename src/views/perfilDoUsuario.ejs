@@ -22,33 +22,28 @@
     <%- include('./partials/menu') %>
 
     <div class="form-container">
-      <form method="get">
-        <ul class="form-style-1">
+      <form method="POST" class="form-style-1" action="/usuarios?_method=PUT">
+        <div>
+          <label>Nome Completo </label>
+          <input type="text" name="nome" class="field-long" value="<%= aluno.nome %>" />
+        </div>
 
-          <li>
-            <label>Nome Completo </label>
-            <input type="text" name="nomeCompleto" class="field-long" value="<%= aluno.nome %>" />
-          </li>
+        <div>
+          <label>Email </label>
+          <input type="email" name="email" class="field-long" value="<%= aluno.email %>" />
+        </div>
 
-          <li>
-            <label>Email </label>
-            <input type="email" name="email" class="field-long" value="<%= aluno.email %>" />
-          </li>
+        <div>
+          <label>Endereço</label>
+          <input type="text" name="logradouro" class="field-long" value="<%= aluno.logradouro %>" />
+        </div>
 
-          <li>
-            <label>Endereço</label>
-            <input type="text" name="endereco" class="field-long" value="<%= aluno.logradouro %>"/>
-          </li>
-
-          <li>
-            <label>Localização</label>
-            <input type="text" name="cidade" class="field-divided" value="<%= aluno.cidade %>" />
-            <input type="text" name="estado" class="field-divided" value="<%= aluno.estado %>" />
-          </li>
-        </ul>
-      </form>
-      <form method="put" action="/usuarios" class="form-style-1">
-        <input type="submit" value="Salvar" />
+        <div>
+          <label>Locadivzação</label>
+          <input type="text" name="cidade" class="field-divided" value="<%= aluno.cidade %>" />
+          <input type="text" name="estado" class="field-divided" value="<%= aluno.estado %>" />
+        </div>
+        <button type="submit"> Salvar </button>
       </form>
     </div>
   </main>

@@ -26,7 +26,6 @@
         <thead>
           <tr>
             <th>Semana</th>
-            <th>Conteudo</th>
             <th>Materia</th>
             <th>Andamento</th>
             <th>Período</th>
@@ -35,32 +34,26 @@
         </thead>
 
         <tbody>
-         
+          <% aulas.forEach(aula => { %>
           <tr class="conteudos">
             <td>
-              <input type="text" value="<%= tarefasAulas.semana %>"/>
+              <%= aula.semana %>
             </td>
             <td>
-              <input type="text" value="<%= tarefasAulas.conteudo %>"/>
+              <%= aula.materia %>
             </td>
             <td>
-              <input type="text" value="<%= tarefasAulas.materia %>"/>
+              <%= aula.status %>
             </td>
             <td>
-              <input type="text" value="<%= tarefasAulas.conteúdo %>"/>
+              <%= aula.periodo %>
             </td>
             <td>
-              <input type="text" value="<%= tarefasAulas.periodo %>"/>
-            </td>
-            <td>
-              <input type="text" value="<%= tarefasAulas.comentários %>"/>
-            </td>
-            <td class="center">
-              <img src="/css/img/editar.png" alt="">
-              <img src="/css/img/excluir.png" alt="">
+              <%= aula.observacao %>
             </td>
           </tr>
-          
+          <% }) %>
+
         </tbody>
       </table>
   </main>

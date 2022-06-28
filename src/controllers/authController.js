@@ -27,7 +27,7 @@ const authController = {
     request.session.autorizado = true;
     request.session.idUsuario = usuarioEncotrado.id;
 
-    return response.redirect('/aulas/register');
+    return response.redirect('/aulas/registro');
   },
   logout: (request, response) => {
     request.session.destroy(null);

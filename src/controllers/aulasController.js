@@ -4,16 +4,14 @@ const { Aulas, Curso } = require('../database/models');
 
 const aulasController = {
   index: async (request, response) => {
-    const tarefasAulas = await Aulas.findAll({ where: { alunoId: request.session.idUsuario } })
+    const aulas = await Aulas.findAll({ where: { alunoId: request.session.idUsuario } });
 
     response.render('aulas', {
       title: 'Express',
-      tarefasAulas
+      aulas
     });
   },
   create: async (request, response) => {
-
-
     const aula = {
       id: uuid(),
       ...request.body,

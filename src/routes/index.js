@@ -12,19 +12,15 @@ const estaAutorizado = require('../middleware/estaAutenticado');
 const routerWithAuth = Router();
 const routerWithoutAuth = Router();
 
-routerWithAuth.get('/cadastro', (_, response) => {
-  response.render('cadastro');
-});
-
 routerWithAuth.use(estaAutorizado);
 
 routerWithAuth.use('/perfil', perfilRouter);
 routerWithAuth.use('/aulas', aulasRouter);
-routerWithAuth.use('/usuarios', usuariosRouter);
 routerWithAuth.use('/menu', menuHeaderRouter);
+routerWithAuth.get('/logout', authController.logout);
 
 routerWithoutAuth.use('/login', loginRouter);
-routerWithAuth.get('/logout', authController.logout);
+routerWithoutAuth.use('/usuarios', usuariosRouter);
 routerWithoutAuth.get('/', (_, response) =>
   response.redirect('login')
 );
