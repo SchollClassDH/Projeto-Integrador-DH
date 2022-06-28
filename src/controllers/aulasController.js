@@ -1,17 +1,31 @@
+const { v4: uuid } = require('uuid');
 
-const fs = require('fs');
+const { Aulas, Curso } = require('../database/models');
+
 const aulasController = {
-  index: (request, response) => {
-    const nomeArquivosTarefas = 'formAulas.json';
-    const tarefasArquivo = fs.readFileSync(nomeArquivosTarefas);
+  index: async (request, response) => {
+    const aulas = await Aulas.findAll({ where: { alunoId: request.session.idUsuario } });
 
-    console.log(tarefasArquivo);
-
-    const tarefas = JSON.parse(tarefasArquivo);
     response.render('aulas', {
       title: 'Express',
-      tarefas,
+      aulas
     });
+  },
+  create: async (request, response) => {
+    const aula = {
+      id: uuid(),
+      ...request.body,
+      alunoId: request.session.idUsuario
+    }
+
+    await Aulas.create(aula);
+
+    response.redirect('/aulas');
+  },
+  registerScreen: async (_, response) => {
+    const cursos = await Curso.findAll();
+
+    response.render('formulario', { cursos });
   }
 }
 

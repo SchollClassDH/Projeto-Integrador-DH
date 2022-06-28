@@ -26,7 +26,6 @@
         <thead>
           <tr>
             <th>Semana</th>
-            <th>Conteudo</th>
             <th>Materia</th>
             <th>Andamento</th>
             <th>Período</th>
@@ -35,32 +34,26 @@
         </thead>
 
         <tbody>
-          <% tarefas.forEach((tarefas)=> { %>
+          <% aulas.forEach(aula => { %>
           <tr class="conteudos">
             <td>
-              <%= tarefas.Semana %>
+              <%= aula.semana %>
             </td>
             <td>
-              <%= tarefas.conteudo %>
+              <%= aula.materia %>
             </td>
             <td>
-              <%= tarefas.materia %>
+              <%= aula.status %>
             </td>
             <td>
-              <%= tarefas.conteúdo %>
+              <%= aula.periodo %>
             </td>
             <td>
-              <%= tarefas.Período %>
-            </td>
-            <td>
-              <%= tarefas.comentários %>
-            </td>
-            <td class="center">
-              <img src="/css/img/editar.png" alt="">
-              <img src="/css/img/excluir.png" alt="">
+              <%= aula.observacao %>
             </td>
           </tr>
           <% }) %>
+
         </tbody>
       </table>
   </main>
@@ -69,5 +62,3 @@
 </body>
 
 </html>
-
-<!-- Teste Branch -->

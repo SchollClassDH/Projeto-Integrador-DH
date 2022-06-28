@@ -111,7 +111,8 @@ select {
 }
 
 .form-style-1 input[type="submit"],
-.form-style-1 input[type="button"] {
+.form-style-1 input[type="button"],
+.form-style-1 button {
   font-size: 18px;
   margin-top: 5px;
   width: 100%;
