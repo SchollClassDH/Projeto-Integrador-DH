@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --backgroud: #f1f0f5;
+  --white: #ffffff;
+  --button: #d9dcf2;
+}
+
 body {
   background-color: #ded8d8;
   background-image: url("/img/Study.svg");
@@ -52,4 +58,26 @@ p {
 main {
   display: flex;
   height: 100vh;
+}
+
+.box button:hover {
+  background: #51b3ec;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.box button {
+  font-size: 18px;
+  margin-top: 5px;
+  width: 100%;
+  height: 65;
+  justify-content: center;
+  background: var(--button);
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
 }
