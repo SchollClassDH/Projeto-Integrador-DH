@@ -5,6 +5,10 @@
     box-sizing: border-box;
   }
 
+  main> div{
+    width: 100%;
+  }
+
 .box{
     margin-top: 50px;
     margin-left: 500px;
@@ -21,7 +25,8 @@
     margin: 5px;
 }
 
-.container{
-    justify-content:space-between;
+.container{    
+    justify-content:space-around;
     display: flex;
+    width: 100%;
 }
