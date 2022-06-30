@@ -135,6 +135,15 @@ select {
   transition: 0.5s;
 }
 
+.form-container button:hover {
+  background: #51b3ec;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 main {
   display: flex;
   height: 100vh;
